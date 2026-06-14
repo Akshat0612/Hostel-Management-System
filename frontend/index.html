@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HostelMS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+        <h2>HostelMS</h2>
+
+        <!-- ADMIN -->
+        <p class="section-title">ADMIN</p>
+        <ul>
+            <li onclick="loadDashboard()">Dashboard</li>
+            <li onclick="loadStudents()">Students</li>
+            <li onclick="loadRooms()">Rooms</li>
+            <li onclick="loadComplaints()">Complaints</li>
+            <li onclick="loadFees()">Fees</li>
+        </ul>
+
+        <!-- STUDENT -->
+        <p class="section-title">STUDENT</p>
+        <ul>
+            <li onclick="loadStudentPanel()">Student Panel</li>
+            <li onclick="loadMyComplaints()">My Complaints</li>
+            <li onclick="loadMyFees()">My Fees</li>
+        </ul>
+
+    </div>
+
+    <!-- Main -->
+    <div class="main" id="mainContent">
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
